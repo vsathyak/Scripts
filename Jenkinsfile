@@ -15,10 +15,8 @@ pipeline {
     success {
       emailext(
         subject: "${env.JOB_NAME} [${env.BUILD_NUMBER}] Ran!",
-        
-        body: """'${env.JOB_NAME} [${env.BUILD_NUMBER}]' Ran!": Check console output at  ${env.JOB_NAME} [${env.BUILD_NUMBER}]/a> """, 
-        
-        to: "vysakh.thekkanattu@email.com" 
+        body: """'${env.JOB_NAME} [${env.BUILD_NUMBER}]' Ran!": Check console output at  ${env.JOB_NAME} [${env.BUILD_NUMBER}]/a> """,
+        to: "vysakh.thekkanattu@gmail.com" 
       ) 
     } 
   } 
